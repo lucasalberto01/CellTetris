@@ -1,0 +1,45 @@
+body{
+    color : #fff;
+    background-color: #18181b;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.corpo{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+
+}
+
+.jogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: row;
+}
+
+.jogo .game {
+    margin: 10px;
+}
+
+.game canvas{
+    border-radius: 10px;
+}
+
+.card .card-header {
+    font-weight: bold;
+}
+
+iframe {
+    height: 80vh;
+    width: 100%;
+}

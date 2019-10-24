@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="blockrain.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Olá, mundo!</title>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div id="game" class="row" style="display: none;">
+            <div class="col-12 text-center" style="padding: 15px;">
+                <h1>CellTetris</h1>
+            </div>
+            <div class="col-4">
+                    <div class="card shadow-lg text-white bg-dark">
+                        <div class="card-header text-center">
+                            Info
+                        </div>
+                        <div class="card-body">
+                            <span class="float-right">
+                                <h5>Sala : <span id="sala"></span></h5>
+                                <h5 id="dono" style="display: none;">Dono</h5>
+                            </span>
+                            <h2>Score : <span id="score">0</span></h2>
+                            <h5>Usuarios Online : <span id="n_users">0</span></h5>
+
+                            <div class="lista-user">
+                                <table class="table table-sm table-dark">
+                                    <thead>
+                                        <tr>
+                                        
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Pontos</th>
+                                        <th scope="col">Game Over</th>
+                                        
+                                        </tr>
+                                    </thead>
+                                    <tbody id="usuarios">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="col-8">
+                <div class="card shadow-lg text-white bg-dark">
+                    <div class="card-header text-center">
+                        Tetris
+                    </div>
+                    <div class="card-body">
+                        <div class="jogo">
+                            <div class="game" style="width:250px; height:500px;"></div>
+                            <div class="client" style="width:250px; height:500px;"></div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!-- 
+            <div class="col-3">
+                
+                <iframe 
+                frameborder="0"
+                scrolling="no"
+                id="chat_embed"
+                src="https://www.twitch.tv/embed/cellbit/chat"
+                >
+                </iframe> 
+            </div>
+        </div>-->
+        <div id="indisponivel" class="row" style="display: none;">
+            <div>
+                <h1>Essa sala não está disponivel</h1>
+            </div>
+            
+        </div>
+        <audio id="foi" style="display: none;">
+            <source src="atencaofoi.ogg" type="audio/ogg">
+        </audio>
+    </div>
+      
+        
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="http://aerolab.github.io/blockrain.js/assets/js/jquery-1.11.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="blockrain.jquery.js"></script>
+    <script src="blockrain.client.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js" ></script>
+
+  </body>
+</html>
